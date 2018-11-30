@@ -14,8 +14,6 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class NeoReceiver1 {
-
-
     /**
      * 消费方法1
      * @param neo

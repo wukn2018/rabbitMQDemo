@@ -30,7 +30,7 @@ public class TopicConfig {
 
 
     /**
-     * 队列
+     * 队列1
      * @return
      */
     @Bean
@@ -40,7 +40,7 @@ public class TopicConfig {
 
 
     /**
-     * 队列
+     * 队列2
      * @return
      */
     @Bean

@@ -21,7 +21,17 @@ public class RabbitConfig {
      * 队列名称
      */
     @Value( "${QUEUE_NAME1}" )
+    private String QUEUE_NAME2;
+
+
+    /**
+     * 队列名称
+     */
+    @Value( "${QUEUE_NAME2}" )
     private String QUEUE_NAME1;
+
+
+
 
 
     /**
@@ -31,6 +41,26 @@ public class RabbitConfig {
     @Bean
     public Queue Queue() {
         return new Queue(QUEUE_NAME);
+    }
+
+
+    /**
+     * 队列
+     * @return
+     */
+    @Bean
+    public Queue Queue1() {
+        return new Queue(QUEUE_NAME1);
+    }
+
+
+    /**
+     * 队列
+     * @return
+     */
+    @Bean
+    public Queue Queue2() {
+        return new Queue(QUEUE_NAME2);
     }
 
 

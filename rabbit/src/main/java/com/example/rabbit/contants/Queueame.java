@@ -6,12 +6,12 @@ package com.example.rabbit.contants;
  * @Author : Wukn
  * @Date : 2018/6/
  */
+
 public class Queueame {
 
-    public static final String queueName = "wkn";
-    public static final String queueName1 = "hello";
-    public static final String queueName2 = "test";
-
+    public static final String queueName = "item_detail_a";
+    public static final String queueName1 = "user_select_a";
+    public static final String queueName2 = "order_add_a";
 
 
 }

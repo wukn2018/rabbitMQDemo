@@ -20,7 +20,7 @@ public class NeoReceiver2 {
      * 消费方法2
      * @param neo
      */
-    @RabbitListener(queues = Queueame.queueName2)
+    @RabbitListener(queues = Queueame.queueName)
     @RabbitHandler
      public void process(String neo) {
                  System.out.println("消费者------->2: " + JSON.parse( neo ));

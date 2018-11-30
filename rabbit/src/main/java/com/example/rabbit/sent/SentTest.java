@@ -41,12 +41,12 @@ public class SentTest {
 
     public void send1(int i) {
         //生产的消息
-        User user = new User( 156,"sd" );
+        User user = new User( i,"message"+i );
         String json = JSON.toJSONString( user );
         String context = "生产者----mesage---->"+i;
         System.out.println("！！！ " + context);
         this.rabbitTemplate.convertAndSend(QUEUE_NAME, json);
-        this.rabbitTemplate.convertAndSend(QUEUE_NAME1, json);
+       // this.rabbitTemplate.convertAndSend(QUEUE_NAME1, json);
     }
 
 
