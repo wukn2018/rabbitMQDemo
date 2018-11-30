@@ -2,7 +2,7 @@ package com.example.rabbit.sent;
 
 import com.alibaba.fastjson.JSON;
 import com.example.rabbit.pojo.User;
-import org.springframework.amqp.core.AmqpTemplate;
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
@@ -18,7 +18,7 @@ import java.util.Date;
 @Controller
 public class SentTest {
     @Autowired
-    private AmqpTemplate rabbitTemplate;
+    private RabbitTemplate rabbitTemplate;
 
     /**
      * 队列名称
